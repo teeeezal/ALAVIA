@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const configPromise = fetch("data/site.json")
     .then(r => r.json())
-    .catch(() => ({ githubUrl: "https://github.com/YOUR-USERNAME/YOUR-REPO" }));
+    .catch(() => ({ githubUrl: "https://github.com/teeeezal/ALVIA" }));
 
   configPromise.then(config => {
     document.querySelectorAll("[data-github]").forEach(link => {
