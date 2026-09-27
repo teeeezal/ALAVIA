@@ -4,7 +4,7 @@
 
 ## 🌐 Live Demo
 
-**[Visit ALVIA — Live Website](https://teeeezal.github.io/ALAVIA/)**
+**[Visit ALVIA — Live Website](https://teeeezal.github.io/ALVIA/)**
 
 ---
 
@@ -161,7 +161,7 @@ The project does not require any external framework or backend.
 ## 📂 Project Structure
 
 ```text
-ALAVIA/
+ALVIA/
 │
 ├── index.html
 ├── sorting.html
@@ -199,13 +199,13 @@ ALVIA is a static web application and can be run without installing any dependen
 ### Clone the repository
 
 ```bash
-git clone https://github.com/teeeezal/ALAVIA.git
+git clone https://github.com/teeeezal/ALVIA.git
 ```
 
 ### Navigate to the project
 
 ```bash
-cd ALAVIA
+cd ALVIA
 ```
 
 ### Run the project
@@ -220,7 +220,7 @@ ALVIA is deployed using **GitHub Pages**.
 
 The live project is available at:
 
-**https://teeeezal.github.io/ALAVIA/**
+**https://teeeezal.github.io/ALVIA/**
 
 To deploy your own version:
 
@@ -292,5 +292,5 @@ You are welcome to explore the source code and use the implementation as a learn
 
 ## 🔗 Links
 
-- **Live Website:** https://teeeezal.github.io/ALAVIA/
-- **GitHub Repository:** https://github.com/teeeezal/ALAVIA
+- **Live Website:** https://teeeezal.github.io/ALVIA/
+- **GitHub Repository:** https://github.com/teeeezal/ALVIA
