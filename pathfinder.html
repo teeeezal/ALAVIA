@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="ALVIA Pathfinder — BFS and DFS grid visualization."><title>Pathfinder — ALVIA</title><link rel="icon" type="image/svg+xml" href="assets/alvia-logo.svg"><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="pathfinder">
+<header class="site-header wrap"><a class="brand" href="index.html"><img src="assets/alvia-logo.svg" alt=""><span>ALVIA</span></a><nav class="main-nav"><a class="pill" href="index.html">Home</a><a class="pill" href="sorting.html">Sorting</a><a class="pill" href="searching.html">Searching</a><a class="pill active-mint" href="pathfinder.html">Pathfinder</a></nav><a class="pill repo-link" href="https://github.com/teeeezal/alvia" target="_blank">GitHub ↗</a></header>
+<main class="wrap tool-page">
+<div class="page-heading"><div><p class="eyebrow">03 · PATHFINDER LAB</p><h1>Draw a maze.<br>Find a route.</h1><p>Place your start and end nodes, draw walls, then watch BFS or DFS explore the grid.</p></div><span class="big-number">03</span></div>
+<section class="visualizer-card path-card">
+<div class="control-row"><label>Algorithm <select id="pathAlgorithm"><option>BFS</option><option>DFS</option></select></label><label>Speed <input id="pathSpeed" type="range" min="20" max="500" value="90"><output id="pathSpeedOut">90ms</output></label><span class="legend"><i class="start-dot"></i> Start <i class="end-dot"></i> End <i class="wall-dot"></i> Wall</span></div>
+<div class="control-row second"><button class="pill action" id="pathPlay">Play</button><button class="pill" id="pathReset">Reset</button><button class="pill" id="clearWalls">Clear walls</button><button class="pill" id="mazeWalls">Random walls</button><button class="pill" id="setStart">Set start</button><button class="pill" id="setEnd">Set end</button></div>
+<div class="grid-wrap"><div class="path-grid" id="pathGrid"></div></div>
+<div class="status-line"><span id="pathStatus">Drag across cells to add walls. Use Set start/end to move nodes.</span><span>BFS uses a queue · DFS uses a stack</span></div>
+</section>
+<section class="info-grid"><article class="outline-card"><span class="tag mint">THEORY</span><h2>Explore the graph.</h2><p>BFS explores nodes layer by layer and can find a shortest path in an unweighted grid. DFS dives down one route before backtracking.</p></article><article class="outline-card"><span class="tag yellow">COMPLEXITY</span><h2>Grid traversal</h2><div class="complexity-table"><div>Time</div><strong>O(V + E)</strong><div>Space</div><strong>O(V)</strong><div>Shortest path</div><strong>BFS</strong><div>DFS</div><strong>Not guaranteed</strong></div></article><article class="outline-card"><span class="tag orange">WHEN TO USE</span><h2>Choose deliberately.</h2><p>BFS is useful for shortest paths in unweighted graphs. DFS is useful for exploration, connectivity and backtracking-style problems.</p></article></section>
+<section class="section compact"><div class="section-intro"><p class="eyebrow">CODE LIBRARY</p><h2>From grid<br>to source code.</h2></div><div class="code-tabs" id="pathCode"></div></section>
+<section class="fact-card"><span class="tag lilac">RANDOM FUN FACT</span><h2 id="pathFact"></h2></section>
+</main>
+<footer class="site-footer wrap"><div><a class="brand footer-brand" href="index.html"><img src="assets/alvia-logo.svg" alt=""><span>ALVIA</span></a><p class="footer-note">Made by Tejal Narwal · 3rd Semester DSA Project</p></div><div class="footer-links"><a href="https://github.com/teeeezal" target="_blank">GitHub ↗</a><a href="https://www.linkedin.com/in/tejalnarwal/" target="_blank">LinkedIn ↗</a><a href="https://github.com/teeeezal/alvia" target="_blank">Project repo ↗</a></div></footer>
+<script src="js/data.js"></script><script src="js/app.js"></script></body></html>

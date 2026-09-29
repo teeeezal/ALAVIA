@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="ALVIA Searching Visualizer — Linear and Binary Search."><title>Searching — ALVIA</title><link rel="icon" type="image/svg+xml" href="assets/alvia-logo.svg"><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="searching">
+<header class="site-header wrap"><a class="brand" href="index.html"><img src="assets/alvia-logo.svg" alt=""><span>ALVIA</span></a><nav class="main-nav"><a class="pill" href="index.html">Home</a><a class="pill" href="sorting.html">Sorting</a><a class="pill active-yellow" href="searching.html">Searching</a><a class="pill" href="pathfinder.html">Pathfinder</a></nav><a class="pill repo-link" href="https://github.com/teeeezal/alvia" target="_blank">GitHub ↗</a></header>
+<main class="wrap tool-page">
+<div class="page-heading"><div><p class="eyebrow">02 · SEARCHING LAB</p><h1>Find it.<br>Step by step.</h1><p>Give the algorithm a target and watch it decide where to look next.</p></div><span class="big-number">02</span></div>
+<section class="visualizer-card">
+<div class="control-row"><label>Algorithm <select id="searchAlgorithm"><option>Linear Search</option><option>Binary Search</option></select></label><label>Target <input id="target" type="number" value="42"></label><label>Speed <input id="searchSpeed" type="range" min="50" max="900" value="400"><output id="searchSpeedOut">400ms</output></label></div>
+<div class="control-row second"><button class="pill action" id="searchPlay">Play</button><button class="pill" id="searchReset">Reset</button><button class="pill" id="searchSort">Sort Array</button><button class="pill" id="searchPush">Push</button><button class="pill" id="searchPop">Pop</button><button class="pill" id="searchRandom">Randomize</button></div>
+<div class="array-stage search-stage" id="searchArray"></div>
+<div class="status-line"><span id="searchStatus">Ready. Set a target and press Play.</span><span>Click a value to edit it.</span></div>
+<div class="edit-array" id="searchEditor"></div>
+</section>
+<section class="info-grid"><article class="outline-card"><span class="tag yellow">THEORY</span><h2>Search = decision making.</h2><p>Searching is the process of locating a value in a collection. Linear Search checks items one by one; Binary Search repeatedly halves a <strong>sorted</strong> search range.</p></article><article class="outline-card"><span class="tag orange">COMPLEXITY</span><h2 id="searchComplexityTitle">Linear Search</h2><div class="complexity-table"><div>Best</div><strong id="sBest">O(1)</strong><div>Average</div><strong id="sAvg">O(n)</strong><div>Worst</div><strong id="sWorst">O(n)</strong><div>Space</div><strong>O(1)</strong></div></article><article class="outline-card"><span class="tag mint">WHEN TO USE</span><h2 id="searchUseTitle">Linear Search</h2><p id="searchUse">Useful for small or unsorted collections. It needs no preprocessing.</p></article></section>
+<section class="section compact"><div class="section-intro"><p class="eyebrow">CODE LIBRARY</p><h2>Trace it,<br>then code it.</h2></div><div class="code-tabs" id="searchCode"></div></section>
+<section class="fact-card"><span class="tag lilac">RANDOM FUN FACT</span><h2 id="searchFact"></h2></section>
+</main>
+<footer class="site-footer wrap"><div><a class="brand footer-brand" href="index.html"><img src="assets/alvia-logo.svg" alt=""><span>ALVIA</span></a><p class="footer-note">Made by Tejal Narwal · 3rd Semester DSA Project</p></div><div class="footer-links"><a href="https://github.com/teeeezal" target="_blank">GitHub ↗</a><a href="https://www.linkedin.com/in/tejalnarwal/" target="_blank">LinkedIn ↗</a><a href="https://github.com/teeeezal/alvia" target="_blank">Project repo ↗</a></div></footer>
+<script src="js/data.js"></script><script src="js/app.js"></script></body></html>

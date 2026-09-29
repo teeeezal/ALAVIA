@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ALVIA Sorting Visualizer — Bubble, Insertion, Selection, Merge and Quick Sort.">
+<title>Sorting — ALVIA</title><link rel="icon" type="image/svg+xml" href="assets/alvia-logo.svg"><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="sorting">
+<header class="site-header wrap">
+<a class="brand" href="index.html"><img src="assets/alvia-logo.svg" alt=""><span>ALVIA</span></a>
+<nav class="main-nav"><a class="pill" href="index.html">Home</a><a class="pill active-orange" href="sorting.html">Sorting</a><a class="pill" href="searching.html">Searching</a><a class="pill" href="pathfinder.html">Pathfinder</a></nav>
+<a class="pill repo-link" href="https://github.com/teeeezal/alvia" target="_blank">GitHub ↗</a>
+</header>
+
+<main class="wrap tool-page">
+<div class="page-heading"><div><p class="eyebrow">01 · SORTING LAB</p><h1>Make order<br>visible.</h1><p>Move, edit, shuffle and sort the array. Then inspect what each algorithm is doing under the hood.</p></div><span class="big-number">01</span></div>
+
+<section class="visualizer-card">
+<div class="control-row">
+<label>Algorithm <select id="sortAlgorithm"><option>Bubble Sort</option><option>Insertion Sort</option><option>Selection Sort</option><option>Merge Sort</option><option>Quick Sort</option></select></label>
+<label>Speed <input id="speed" type="range" min="50" max="900" value="350"><output id="speedOut">350ms</output></label>
+<label>Elements <input id="count" type="range" min="5" max="30" value="14"><output id="countOut">14</output></label>
+</div>
+<div class="control-row second">
+<button class="pill action" id="sortPlay">Play</button><button class="pill" id="sortReset">Reset</button>
+<button class="pill" id="sortRandom">Randomize</button><button class="pill" id="sortPush">Push</button><button class="pill" id="sortPop">Pop</button>
+</div>
+<div class="array-stage" id="sortArray" aria-label="Sorting visualization"></div>
+<div class="status-line"><span id="sortStatus">Ready. Pick an algorithm and press Play.</span><span>Tip: click a value to edit it.</span></div>
+<div class="edit-array" id="sortEditor"></div>
+</section>
+
+<section class="info-grid">
+<article class="outline-card"><span class="tag orange">THEORY</span><h2>What is sorting?</h2><p>Sorting arranges data according to a chosen order. Different algorithms trade speed, memory, stability and implementation complexity in different ways.</p></article>
+<article class="outline-card"><span class="tag yellow">COMPLEXITY</span><h2 id="complexityTitle">Bubble Sort</h2><div class="complexity-table"><div>Best</div><strong id="bestCase">O(n)</strong><div>Average</div><strong id="avgCase">O(n²)</strong><div>Worst</div><strong id="worstCase">O(n²)</strong><div>Space</div><strong id="spaceCase">O(1)</strong></div></article>
+<article class="outline-card"><span class="tag mint">WHEN TO USE</span><h2>Practical notes</h2><p id="useCase">Good for teaching and tiny/nearly sorted inputs. Avoid it for large unsorted datasets when faster algorithms are available.</p></article>
+</section>
+
+<section class="section compact"><div class="section-intro"><p class="eyebrow">CODE LIBRARY</p><h2>Same idea.<br>Four languages.</h2></div><div class="code-tabs" id="sortCode"></div></section>
+<section class="fact-card"><span class="tag lilac">RANDOM FUN FACT</span><h2 id="sortFact"></h2></section>
+</main>
+<footer class="site-footer wrap"><div><a class="brand footer-brand" href="index.html"><img src="assets/alvia-logo.svg" alt=""><span>ALVIA</span></a><p class="footer-note">Made by Tejal Narwal · 3rd Semester DSA Project</p></div><div class="footer-links"><a href="https://github.com/teeeezal" target="_blank">GitHub ↗</a><a href="https://www.linkedin.com/in/tejalnarwal/" target="_blank">LinkedIn ↗</a><a href="https://github.com/teeeezal/alvia" target="_blank">Project repo ↗</a></div></footer>
+<script src="js/data.js"></script><script src="js/app.js"></script>
+</body></html>
