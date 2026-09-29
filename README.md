@@ -14,7 +14,7 @@
 
 The primary objective of the project is to provide a visual and interactive way to understand how common algorithms operate. Instead of relying solely on source code or theoretical explanations, ALVIA represents algorithmic operations through animations, allowing users to observe comparisons, swaps, searches, traversals, and pathfinding processes directly.
 
-The project is completely browser-based and does not require a backend server.
+The project is completely browser-based and does not require a backend server or external framework.
 
 ---
 
@@ -51,6 +51,12 @@ Users can:
 - Adjust visualization speed.
 - Start and reset the visualization.
 - Select different sorting algorithms.
+- View algorithm theory and complexity.
+- Explore use cases and applications.
+- View implementations in **C, C++, Python, and Java**.
+- Read a fun fact related to the algorithm.
+
+The sorting visualization uses a book/library-inspired interface to make the process more intuitive.
 
 ---
 
@@ -65,14 +71,21 @@ Users can:
 
 - Enter a target value.
 - Modify the array.
-- Add or remove elements.
+- Add new elements using **Push**.
+- Remove elements using **Pop**.
+- Increase or decrease individual element values.
+- Randomize the array.
 - Adjust visualization speed.
 - Start and reset the visualization.
 - Observe the search process through animation.
+- View algorithm theory and complexity.
+- Explore use cases and applications.
+- View implementations in **C, C++, Python, and Java**.
+- Read a fun fact related to the algorithm.
 
 ---
 
-### 3. Pathfinding Visualizer
+### 3. Pathfinder Visualizer
 
 The pathfinding module provides visualizations for:
 
@@ -84,10 +97,35 @@ Users can:
 - Select BFS or DFS.
 - Define a starting point.
 - Define an ending point.
-- Add walls to the grid.
+- Add and remove walls on the grid.
 - Adjust animation speed.
 - Start and reset the visualization.
-- Observe the traversal and resulting path.
+- Watch the traversal process step by step.
+- Observe the resulting path.
+- View algorithm theory and complexity.
+- Explore use cases and applications.
+- View implementations in **C, C++, Python, and Java**.
+- Read a fun fact related to the algorithm.
+
+---
+
+## 🎨 Design
+
+ALVIA follows a custom visual design based on the project's design reference.
+
+The interface uses:
+
+- A warm **peach background**.
+- Bold **black structural borders**.
+- Rounded pill-shaped buttons and navigation elements.
+- Flat, colorful cards.
+- **Alfa Slab One** for display headings.
+- **Manrope** for body text and interface elements.
+- Line-art inspired visual elements and illustrations.
+- Generous whitespace and clean layouts.
+- No heavy shadows or gradients.
+
+The landing page and each visualizer maintain the same overall design language while using their own visual themes and small animated elements.
 
 ---
 
@@ -96,12 +134,13 @@ Users can:
 | Technology | Purpose |
 |---|---|
 | HTML5 | Structure and page layout |
-| CSS3 | Styling, layout, and animations |
+| CSS3 | Styling, responsive layout, and animations |
 | JavaScript | Algorithm implementation and visualization logic |
-| JSON | Configuration and algorithm data |
+| SVG | Logo and visual assets |
+| Google Fonts | Alfa Slab One and Manrope typography |
 | GitHub Pages | Deployment and hosting |
 
-The project does not require any external framework or backend.
+The project does not require any external framework, backend, database, or package installation.
 
 ---
 
@@ -141,20 +180,20 @@ The project does not require any external framework or backend.
 
 - **Play** — Start the visualization.
 - **Reset** — Restore the initial state.
-- **Velocity / Speed** — Control animation speed.
+- **Speed / Velocity** — Control animation speed.
 - **Push** — Add an element.
 - **Pop** — Remove an element.
 - **Randomize** — Generate a new array.
 - **Element Controls** — Modify individual values.
 
-### Pathfinding
+### Pathfinder
 
-- **Play** — Start traversal.
-- **Reset** — Clear the current visualization.
+- **Play** — Start traversal and pathfinding.
+- **Reset** — Restore the grid.
 - **Speed** — Control animation speed.
 - **Start** — Set the starting node.
 - **End** — Set the destination node.
-- **Wall** — Add obstacles to the grid.
+- **Wall** — Add or remove obstacles from the grid.
 
 ---
 
@@ -166,28 +205,18 @@ ALVIA/
 ├── index.html
 ├── sorting.html
 ├── searching.html
-├── pathfinding.html
+├── pathfinder.html
+├── README.md
+│
+├── assets/
+│   └── alvia-logo.svg
 │
 ├── css/
 │   └── style.css
 │
-├── js/
-│   ├── main.js
-│   ├── sorting.js
-│   ├── searching.js
-│   └── pathfinding.js
-│
-├── data/
-│   ├── site.json
-│   └── algorithms.json
-│
-├── assets/
-│   ├── logo.svg
-│   ├── hero.svg
-│   └── alvia-main-illustration.svg
-│
-├── README.md
-└── .nojekyll
+└── js/
+    ├── app.js
+    └── data.js
 ```
 
 ---
@@ -211,6 +240,8 @@ cd ALVIA
 ### Run the project
 
 Open `index.html` directly in a browser, or use a local development server such as **VS Code Live Server**.
+
+No build step or package installation is required.
 
 ---
 
@@ -251,6 +282,8 @@ ALVIA was developed as an academic project to demonstrate the practical implemen
 
 The project focuses on making algorithm execution easier to observe and understand through interactive visual feedback.
 
+It is intended primarily as a learning and demonstration tool for students studying DSA.
+
 ---
 
 ## 🔮 Future Enhancements
@@ -268,6 +301,7 @@ Potential future improvements include:
 - Algorithm explanations and pseudocode
 - Dark mode
 - Improved mobile responsiveness
+- Additional sorting and searching algorithms
 
 ---
 
@@ -279,6 +313,8 @@ B.Tech Computer Science and Engineering
 Semester 3
 
 GitHub: **[teeeezal](https://github.com/teeeezal)**
+
+LinkedIn: **[tejalnarwal](https://www.linkedin.com/in/tejalnarwal/)**
 
 ---
 
@@ -294,3 +330,9 @@ You are welcome to explore the source code and use the implementation as a learn
 
 - **Live Website:** https://teeeezal.github.io/ALVIA/
 - **GitHub Repository:** https://github.com/teeeezal/ALVIA
+- **GitHub Profile:** https://github.com/teeeezal
+- **LinkedIn:** https://www.linkedin.com/in/tejalnarwal/
+
+---
+
+**Made by Tejal Narwal · 3rd Semester DSA Project**
